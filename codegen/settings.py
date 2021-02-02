@@ -72,7 +72,7 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
 ]
 
-ROOT_URLCONF = 'user_auth.urls'
+ROOT_URLCONF = 'codegen.urls'
 
 
 CELERY_BROKER_URL = 'amqp://localhost'
@@ -97,7 +97,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'user_auth.wsgi.application'
+WSGI_APPLICATION = 'codegen.wsgi.application'
 
 
 # Database

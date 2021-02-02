@@ -1,4 +1,19 @@
 from django.db import models
+from django.contrib.auth.models import User
+import random
+import uuid
+
+class UserProfile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    code =  models.CharField(max_length=100, null=True, blank=True, unique=True)
+
+    def __str__(self):
+        return str(self.user) + "\t" +str(self.code)
+    
+
+    
+    
+# str(User.first_name) + str(User.last_name) + str(random.Random(uuid.uuid1().hex).getrandbits(128))[0:6]
 # from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
 # import uuid
 
@@ -71,3 +86,4 @@ from django.db import models
 # def create_auth_token(sender, instance=None, created=False, **kwargs):
 #     if created:
 #         Token.objects.create(user=instance)
+

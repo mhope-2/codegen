@@ -1,13 +1,30 @@
-{% comment %} {% extends "registration/base.html" %} {% endcomment %}
+<!DOCTYPE html>
 {% load static %}
 
-{% block body_block %}
+{% comment %} <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+<img src="{% static 'my_app/example.jpg' %}" alt="My image"> {% endcomment %}
 
-        <div class="jumbotron">
-        <h1>
-            Profile View
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+   <link rel="apple-touch-icon" sizes="76x76" href="{% static 'assets/img/apple-icon.png' %}" type="image/x-icon">  
+  <link rel="icon" type="image/png" href="{% static 'assets/img/favicon.png' %}" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Profile View
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
-        </h1>
-     </div>
+</head>
 
-{% endblock %}
+<body class="">
+ 
+<p>Your unique code is {{code}}</p>
+ 
+    
+</body>
+
+</html>

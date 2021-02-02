@@ -1,5 +1,7 @@
 from django.contrib.auth import get_user_model, authenticate
-# from .models import User
+from django.contrib.auth.models import User
+import random
+import uuid
 #from .permissions import IsAuthorOrReadOnly
 from django.views.generic import ListView, TemplateView, CreateView, DetailView, View
 from .forms import UserCreateForm
@@ -22,39 +24,54 @@ import numpy as np
 import pandas as pd
 import json
 
+from user_app.models import UserProfile
+
 
 class HomeView(TemplateView):
     template_name = 'user_app/index.html'
 
 
-class ProfileView(TemplateView):
+class ProfileView(TemplateView,LoginRequiredMixin):
+    model = User
     template_name = 'user_app/login_views/profile_view.html'
 
+    def get_context_data(self, **kwargs):
+
+        context = super().get_context_data(**kwargs)
+        context['code'] = ""
+        context['first_name'] = self.request.user.first_name
+        context['last_name'] = self.request.user.last_name
+        
+        try:
+
+            if  UserProfile.objects.filter(code__isnull=True):
+                
+                gen_code = str(self.request.user.first_name)[0] + str(self.request.user.last_name)[0] + str(random.Random(uuid.uuid1().hex).getrandbits(128))[0:6]
+                gen_code_save = UserProfile(user=self.request.user, code=gen_code)
+                gen_code_save.save()
+                context['code'] = UserProfile.objects.values_list('code', flat=True).get(user=self.request.user)
+                    
+            else:
+                context['code'] = UserProfile.objects.values_list('code', flat=True).get(user=self.request.user)
+        
+        except UserProfile.DoesNotExist as e:
+            
+                gen_code = str(self.request.user.first_name)[0] + str(self.request.user.last_name)[0] + str(random.Random(uuid.uuid1().hex).getrandbits(128))[0:6]
+                gen_code_save = UserProfile(user=self.request.user, code=gen_code)
+                gen_code_save.save()
+                context['code'] = UserProfile.objects.values_list('code', flat=True).get(user=self.request.user)
+
+        
+        return context
+
+
+    
 
 class SignUpView(CreateView):
     model = User
     form_class = forms.UserCreateForm
     success_url = reverse_lazy('user_app:login')
     template_name = 'user_app/registration/sign_up.html'
-
-    def register(request):
-        registered = False
-        if request.method == 'POST':
-
-            user_form = UserCreateForm(data=request.POST)
-            if user_form.is_valid():
-                user = user_form.save(commit=False)
-                user.set_password(user.password)
-
-                user_form.save(commit=True)
-                user.save()
-
-                registered = True
-
-            else:
-                print(user_form.errors, profile_form.errors)
-        else:
-            user_form = UserCreateForm()
 
 
 class LogoutView(TemplateView):
