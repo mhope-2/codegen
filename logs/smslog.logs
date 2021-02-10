@@ -2602,3 +2602,840 @@ AttributeError: 'str' object has no attribute 'exists'
 2021-02-02 03:18:34,066,66 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
 2021-02-02 03:18:34,067,67 asyncio DEBUG Using selector: KqueueSelector
 2021-02-02 03:22:22,730,730 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 21:22:05,620,620 django.request WARNING Not Found: /favicon.ico
+2021-02-09 21:22:20,707,707 django.request WARNING Not Found: /signup/
+2021-02-09 21:33:17,992,992 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 21:41:16,170,170 django.request ERROR Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/codegen/views.py", line 21, in index
+    return render(request, 'user_auth/index.html')
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: user_auth/index.html
+2021-02-09 21:41:33,192,192 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/codegen/views.py changed, reloading.
+2021-02-09 21:41:33,197,197 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 21:42:10,332,332 django.request ERROR Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/codegen/views.py", line 21, in index
+    return render(request, 'user_auth/front/index.html')
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: user_auth/font/index.html
+2021-02-09 21:42:10,619,619 django.request WARNING Not Found: /favicon.ico
+2021-02-09 21:42:19,831,831 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 21:42:28,324,324 django.request WARNING Not Found: /assets/css/nucleo-icons.css
+2021-02-09 21:42:28,361,361 django.request WARNING Not Found: /assets/css/nucleo-svg.css
+2021-02-09 21:42:28,367,367 django.request WARNING Not Found: /assets/css/font-awesome.css
+2021-02-09 21:42:28,375,375 django.request WARNING Not Found: /assets/css/argon-design-system.css
+2021-02-09 21:42:28,397,397 django.request WARNING Not Found: /assets/img/faces/team-1.jpg
+2021-02-09 21:42:28,419,419 django.request WARNING Not Found: /assets/img/faces/team-2.jpg
+2021-02-09 21:42:28,448,448 django.request WARNING Not Found: /assets/img/faces/team-3.jpg
+2021-02-09 21:42:28,460,460 django.request WARNING Not Found: /assets/img/brand/creativetim-white-slim.png
+2021-02-09 21:42:28,466,466 django.request WARNING Not Found: /assets/img/brand/white.png
+2021-02-09 21:42:28,484,484 django.request WARNING Not Found: /assets/img/brand/blue.png
+2021-02-09 21:42:28,695,695 django.request WARNING Not Found: /assets/js/plugins/nouislider.min.js
+2021-02-09 21:42:28,727,727 django.request WARNING Not Found: /assets/js/core/popper.min.js
+2021-02-09 21:42:28,729,729 django.request WARNING Not Found: /assets/js/core/jquery.min.js
+2021-02-09 21:42:28,730,730 django.request WARNING Not Found: /assets/js/plugins/perfect-scrollbar.jquery.min.js
+2021-02-09 21:42:28,732,732 django.request WARNING Not Found: /assets/js/plugins/moment.min.js
+2021-02-09 21:42:28,737,737 django.request WARNING Not Found: /assets/js/plugins/bootstrap-switch.js
+2021-02-09 21:42:28,743,743 django.request WARNING Not Found: /assets/js/core/bootstrap.min.js
+2021-02-09 21:42:28,760,760 django.request WARNING Not Found: /assets/js/plugins/bootstrap-datepicker.min.js
+2021-02-09 21:42:28,763,763 django.request WARNING Not Found: /assets/js/plugins/datetimepicker.js
+2021-02-09 21:42:28,786,786 django.request WARNING Not Found: /assets/js/argon-design-system.min.js
+2021-02-09 21:42:28,793,793 django.request WARNING Not Found: /assets/js/core/popper.min.js
+2021-02-09 21:42:28,955,955 django.request WARNING Not Found: /assets/img/icons/common/google.svg
+2021-02-09 21:42:28,970,970 django.request WARNING Not Found: /assets/img/icons/common/github.svg
+2021-02-09 21:42:29,073,73 django.request WARNING Not Found: /assets/img/theme/img-2-1200x1000.jpg
+2021-02-09 21:42:29,139,139 django.request WARNING Not Found: /assets/img/theme/profile.jpg
+2021-02-09 21:42:29,142,142 django.request WARNING Not Found: /assets/img/faces/team-4.jpg
+2021-02-09 21:42:28,920,920 django.request WARNING Not Found: /assets/img/theme/img-1-1200x1000.jpg
+2021-02-09 21:42:29,671,671 django.request WARNING Not Found: /assets/js/core/bootstrap.min.js
+2021-02-09 21:42:29,692,692 django.request WARNING Not Found: /assets/img/theme/landing.jpg
+2021-02-09 21:42:29,699,699 django.request WARNING Not Found: /assets/img/ill/1.svg
+2021-02-09 21:42:29,745,745 django.request WARNING Not Found: /assets/js/plugins/perfect-scrollbar.jquery.min.js
+2021-02-09 21:42:29,764,764 django.request WARNING Not Found: /assets/js/plugins/bootstrap-switch.js
+2021-02-09 21:42:30,631,631 django.request WARNING Not Found: /assets/js/plugins/nouislider.min.js
+2021-02-09 21:42:30,738,738 django.request WARNING Not Found: /assets/js/plugins/moment.min.js
+2021-02-09 21:42:31,219,219 django.request WARNING Not Found: /assets/js/plugins/datetimepicker.js
+2021-02-09 21:42:31,262,262 django.request WARNING Not Found: /assets/js/plugins/bootstrap-datepicker.min.js
+2021-02-09 21:42:31,328,328 django.request WARNING Not Found: /assets/js/argon-design-system.min.js
+2021-02-09 21:42:31,500,500 django.request WARNING Not Found: /assets/img/apple-icon.png
+2021-02-09 21:42:31,502,502 django.request WARNING Not Found: /assets/img/favicon.png
+2021-02-09 21:44:11,895,895 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 21:45:23,900,900 django.request WARNING Not Found: /assets/css/nucleo-svg.css
+2021-02-09 21:45:23,902,902 django.request WARNING Not Found: /assets/js/core/popper.min.js
+2021-02-09 21:45:23,903,903 django.request WARNING Not Found: /assets/css/argon-design-system.css
+2021-02-09 21:45:23,905,905 django.request WARNING Not Found: /assets/js/core/jquery.min.js
+2021-02-09 21:45:23,908,908 django.request WARNING Not Found: /assets/css/nucleo-icons.css
+2021-02-09 21:45:23,910,910 django.request WARNING Not Found: /assets/css/font-awesome.css
+2021-02-09 21:45:23,933,933 django.request WARNING Not Found: /assets/js/core/bootstrap.min.js
+2021-02-09 21:45:23,957,957 django.request WARNING Not Found: /assets/js/plugins/perfect-scrollbar.jquery.min.js
+2021-02-09 21:45:23,975,975 django.request WARNING Not Found: /assets/js/plugins/bootstrap-switch.js
+2021-02-09 21:45:23,979,979 django.request WARNING Not Found: /assets/js/plugins/nouislider.min.js
+2021-02-09 21:45:23,989,989 django.request WARNING Not Found: /assets/js/plugins/moment.min.js
+2021-02-09 21:45:24,005,5 django.request WARNING Not Found: /assets/js/plugins/datetimepicker.js
+2021-02-09 21:45:24,053,53 django.request WARNING Not Found: /assets/js/argon-design-system.min.js
+2021-02-09 21:45:24,068,68 django.request WARNING Not Found: /assets/js/plugins/bootstrap-datepicker.min.js
+2021-02-09 21:45:24,073,73 django.request WARNING Not Found: /assets/js/core/popper.min.js
+2021-02-09 21:45:24,110,110 django.request WARNING Not Found: /assets/img/brand/blue.png
+2021-02-09 21:45:24,150,150 django.request WARNING Not Found: /assets/img/faces/team-3.jpg
+2021-02-09 21:45:24,160,160 django.request WARNING Not Found: /assets/img/faces/team-1.jpg
+2021-02-09 21:45:24,168,168 django.request WARNING Not Found: /assets/img/faces/team-2.jpg
+2021-02-09 21:45:24,172,172 django.request WARNING Not Found: /assets/img/brand/white.png
+2021-02-09 21:45:24,177,177 django.request WARNING Not Found: /assets/img/brand/creativetim-white-slim.png
+2021-02-09 21:45:24,239,239 django.request WARNING Not Found: /assets/img/faces/team-4.jpg
+2021-02-09 21:45:24,291,291 django.request WARNING Not Found: /assets/img/theme/landing.jpg
+2021-02-09 21:45:24,305,305 django.request WARNING Not Found: /assets/img/theme/img-2-1200x1000.jpg
+2021-02-09 21:45:24,312,312 django.request WARNING Not Found: /assets/img/theme/img-1-1200x1000.jpg
+2021-02-09 21:45:24,317,317 django.request WARNING Not Found: /assets/img/icons/common/github.svg
+2021-02-09 21:45:24,336,336 django.request WARNING Not Found: /assets/js/core/bootstrap.min.js
+2021-02-09 21:45:24,371,371 django.request WARNING Not Found: /assets/img/theme/profile.jpg
+2021-02-09 21:45:24,378,378 django.request WARNING Not Found: /assets/img/icons/common/google.svg
+2021-02-09 21:45:24,388,388 django.request WARNING Not Found: /assets/img/ill/1.svg
+2021-02-09 21:45:24,414,414 django.request WARNING Not Found: /assets/js/plugins/perfect-scrollbar.jquery.min.js
+2021-02-09 21:45:24,437,437 django.request WARNING Not Found: /assets/js/plugins/bootstrap-switch.js
+2021-02-09 21:45:24,463,463 django.request WARNING Not Found: /assets/js/plugins/nouislider.min.js
+2021-02-09 21:45:24,492,492 django.request WARNING Not Found: /assets/js/plugins/moment.min.js
+2021-02-09 21:45:24,520,520 django.request WARNING Not Found: /assets/js/plugins/datetimepicker.js
+2021-02-09 21:45:24,548,548 django.request WARNING Not Found: /assets/js/plugins/bootstrap-datepicker.min.js
+2021-02-09 21:45:24,594,594 django.request WARNING Not Found: /assets/js/argon-design-system.min.js
+2021-02-09 21:45:24,634,634 django.request WARNING Not Found: /assets/img/favicon.png
+2021-02-09 21:45:24,656,656 django.request WARNING Not Found: /assets/img/apple-icon.png
+2021-02-09 21:58:15,147,147 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 22:22:57,921,921 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 22:23:22,375,375 django.request ERROR Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/codegen/views.py", line 21, in index
+    return render(request, 'accounts/register.html')
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/loader_tags.py", line 270, in do_extends
+    nodelist = parser.parse()
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/loader_tags.py", line 213, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/defaulttags.py", line 979, in do_if
+    nodelist = parser.parse(('endif',))
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 449, in parse
+    raise self.error(token, e)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 657, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 569, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'crispy'
+2021-02-09 22:23:41,069,69 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 22:25:45,092,92 django.request WARNING Not Found: /signup/
+2021-02-09 22:28:10,610,610 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 22:28:20,085,85 django.request ERROR Internal Server Error: /user_app/signup/
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 202, in _get_response
+    response = response.render()
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 479, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 496, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends "layouts/base.html"> must be the first tag in the template.
+2021-02-09 22:29:29,698,698 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 22:29:39,247,247 django.request ERROR Internal Server Error: /user_app/signup/
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 202, in _get_response
+    response = response.render()
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 479, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 496, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends "user_app/layouts/base.html"> must be the first tag in the template.
+2021-02-09 22:31:05,796,796 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 22:31:12,011,11 django.request ERROR Internal Server Error: /user_app/signup/
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 202, in _get_response
+    response = response.render()
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 479, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 496, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends "user_app/registration/user_app/layouts/base.html"> must be the first tag in the template.
+2021-02-09 22:32:57,602,602 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 22:39:00,294,294 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/codegen/views.py changed, reloading.
+2021-02-09 22:39:00,295,295 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 22:39:59,763,763 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 22:43:35,121,121 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 22:47:51,622,622 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 22:48:55,446,446 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 22:51:15,252,252 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 22:53:47,364,364 django.request WARNING Not Found: /favicon.ico
+2021-02-09 23:00:04,523,523 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:12:11,132,132 django.request WARNING Not Found: /favicon.ico
+2021-02-09 23:23:06,713,713 django.request WARNING Not Found: /favicon.ico
+2021-02-09 23:23:09,643,643 django.request WARNING Not Found: /favicon.ico
+2021-02-09 23:23:28,689,689 django.request ERROR Internal Server Error: /user_app/profile/
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/user_app/views.py", line 55, in get_context_data
+    context['code'] = UserProfile.objects.values_list('code', flat=True).get(user=self.request.user)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 429, in get
+    raise self.model.DoesNotExist(
+user_app.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 159, in get
+    context = self.get_context_data(**kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/user_app/views.py", line 59, in get_context_data
+    gen_code = str(self.request.user.first_name)[0] + str(self.request.user.last_name)[0] + str(random.Random(uuid.uuid1().hex).getrandbits(128))[0:6]
+IndexError: string index out of range
+2021-02-09 23:24:06,743,743 django.request WARNING Not Found: /favicon.ico
+2021-02-09 23:24:20,626,626 django.request WARNING Not Found: /favicon.ico
+2021-02-09 23:24:27,518,518 django.request WARNING Not Found: /favicon.ico
+2021-02-09 23:24:28,819,819 django.request WARNING Not Found: /favicon.ico
+2021-02-09 23:25:45,632,632 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:29:39,479,479 django.request WARNING Not Found: /favicon.ico
+2021-02-09 23:29:47,687,687 django.request ERROR Internal Server Error: /user_app/profile/
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 159, in get
+    context = self.get_context_data(**kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/user_app/views.py", line 42, in get_context_data
+    context['first_name'] = self.request.user.first_name
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/utils/functional.py", line 241, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'first_name'
+2021-02-09 23:30:52,088,88 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:30:52,092,92 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:30:58,546,546 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:30:58,555,555 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:31:04,657,657 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:31:04,657,657 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:31:08,241,241 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:31:08,242,242 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:31:14,398,398 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:31:14,399,399 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:31:19,208,208 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:31:19,210,210 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:31:29,068,68 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:31:29,069,69 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:31:54,510,510 django.request ERROR Internal Server Error: /user_app/profile/
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 202, in _get_response
+    response = response.render()
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/backends/django.py", line 59, in render
+    context = make_context(context, request, autoescape=self.backend.engine.autoescape)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/context.py", line 268, in make_context
+    raise TypeError('context must be a dict rather than %s.' % context.__class__.__name__)
+TypeError: context must be a dict rather than HttpResponseRedirect.
+2021-02-09 23:32:14,729,729 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:32:14,747,747 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:32:23,184,184 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:32:23,185,185 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:32:30,446,446 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:32:30,448,448 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:32:39,891,891 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:32:39,893,893 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:32:46,038,38 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:32:46,039,39 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:32:54,257,257 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:32:54,258,258 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:32:59,792,792 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:32:59,793,793 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:33:08,938,938 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:33:08,939,939 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:33:13,198,198 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:33:13,199,199 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:33:18,954,954 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:33:18,970,970 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:33:26,497,497 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:33:26,498,498 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:33:31,926,926 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:33:31,927,927 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:33:36,105,105 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:33:36,121,121 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:33:42,624,624 django.request ERROR Internal Server Error: /user_app/profile/
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 159, in get
+    context = self.get_context_data(**kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/user_app/views.py", line 61, in get_context_data
+    context['code'] = UserProfile.objects.values_list('code', flat=True).get(user=self.request.user)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 418, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1292, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1121, in check_related_objects
+    for v in value:
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/utils/functional.py", line 241, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+2021-02-09 23:34:00,547,547 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:34:00,548,548 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:34:05,244,244 django.request ERROR Internal Server Error: /user_app/profile/
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 159, in get
+    context = self.get_context_data(**kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/user_app/views.py", line 61, in get_context_data
+    context['code'] = UserProfile.objects.values_list('code', flat=True).get(user=self.request.user)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 418, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1292, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1121, in check_related_objects
+    for v in value:
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/utils/functional.py", line 241, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+2021-02-09 23:34:08,275,275 django.request ERROR Internal Server Error: /user_app/profile/
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 159, in get
+    context = self.get_context_data(**kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/user_app/views.py", line 61, in get_context_data
+    context['code'] = UserProfile.objects.values_list('code', flat=True).get(user=self.request.user)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 418, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1292, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1121, in check_related_objects
+    for v in value:
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/utils/functional.py", line 241, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+2021-02-09 23:34:41,847,847 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:34:41,847,847 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:34:47,065,65 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:34:47,066,66 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:34:52,877,877 django.request ERROR Internal Server Error: /user_app/profile/
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 159, in get
+    context = self.get_context_data(**kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/user_app/views.py", line 61, in get_context_data
+    context['code'] = UserProfile.objects.values_list('code', flat=True).get(user=self.request.user)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 418, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1292, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1121, in check_related_objects
+    for v in value:
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/utils/functional.py", line 241, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+2021-02-09 23:34:54,790,790 django.request ERROR Internal Server Error: /user_app/profile/
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 159, in get
+    context = self.get_context_data(**kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/user_app/views.py", line 61, in get_context_data
+    context['code'] = UserProfile.objects.values_list('code', flat=True).get(user=self.request.user)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 418, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1292, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1121, in check_related_objects
+    for v in value:
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/utils/functional.py", line 241, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+2021-02-09 23:34:59,530,530 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:34:59,531,531 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:35:04,914,914 django.request ERROR Internal Server Error: /user_app/profile/
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 159, in get
+    context = self.get_context_data(**kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/user_app/views.py", line 61, in get_context_data
+    context['code'] = UserProfile.objects.values_list('code', flat=True).get(user=self.request.user)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 418, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1292, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1121, in check_related_objects
+    for v in value:
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/utils/functional.py", line 241, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+2021-02-09 23:35:31,314,314 django.request ERROR Internal Server Error: /user_app/profile/
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 159, in get
+    context = self.get_context_data(**kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/user_app/views.py", line 61, in get_context_data
+    context['code'] = UserProfile.objects.values_list('code', flat=True).get(user=self.request.user)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 418, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1292, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1121, in check_related_objects
+    for v in value:
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/utils/functional.py", line 241, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+2021-02-09 23:35:47,228,228 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:35:47,229,229 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:35:50,673,673 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:35:50,674,674 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:35:57,029,29 django.request ERROR Internal Server Error: /user_app/profile/
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 159, in get
+    context = self.get_context_data(**kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    if test_func(request.user):
+AttributeError: 'ProfileView' object has no attribute 'user'
+2021-02-09 23:39:58,056,56 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:39:58,070,70 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:40:26,846,846 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:40:26,852,852 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:40:55,068,68 django.request ERROR Internal Server Error: /user_app/profile/
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 159, in get
+    context = self.get_context_data(**kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    if test_func(request.user):
+AttributeError: 'ProfileView' object has no attribute 'user'
+2021-02-09 23:41:21,127,127 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:41:21,131,131 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:41:28,642,642 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:41:28,647,647 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:41:37,523,523 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:41:37,524,524 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:41:47,162,162 django.request ERROR Internal Server Error: /user_app/profile/
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 159, in get
+    context = self.get_context_data(**kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    if test_func(request.user):
+AttributeError: 'ProfileView' object has no attribute 'user'
+2021-02-09 23:41:49,159,159 django.request ERROR Internal Server Error: /user_app/profile/
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 159, in get
+    context = self.get_context_data(**kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    if test_func(request.user):
+AttributeError: 'ProfileView' object has no attribute 'user'
+2021-02-09 23:42:10,510,510 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/codegen/settings.py changed, reloading.
+2021-02-09 23:42:10,511,511 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:42:24,090,90 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/codegen/settings.py changed, reloading.
+2021-02-09 23:42:24,092,92 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:42:36,036,36 django.request ERROR Internal Server Error: /user_app/profile/
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 159, in get
+    context = self.get_context_data(**kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    if test_func(request.user):
+AttributeError: 'ProfileView' object has no attribute 'user'
+2021-02-09 23:43:45,160,160 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:43:45,182,182 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:45:01,343,343 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:45:01,384,384 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:45:07,057,57 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:45:07,058,58 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:45:11,577,577 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:45:11,578,578 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:45:15,924,924 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:45:15,925,925 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:45:20,122,122 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:45:20,123,123 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:45:24,109,109 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:45:24,110,110 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:45:33,007,7 django.request ERROR Internal Server Error: /user_app/profile/
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 159, in get
+    context = self.get_context_data(**kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    if test_func(request.user):
+AttributeError: 'ProfileView' object has no attribute 'user'
+2021-02-09 23:45:33,218,218 django.request WARNING Not Found: /favicon.ico
+2021-02-09 23:45:39,756,756 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:47:54,773,773 django.request WARNING Not Found: /favicon.ico
+2021-02-09 23:48:01,673,673 django.request WARNING Not Found: /favicon.ico
+2021-02-09 23:48:07,119,119 django.request ERROR Internal Server Error: /user_app/profile/
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 159, in get
+    context = self.get_context_data(**kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    if test_func(request.user):
+AttributeError: 'ProfileView' object has no attribute 'user'
+2021-02-09 23:48:16,146,146 django.request ERROR Internal Server Error: /user_app/profile/
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 159, in get
+    context = self.get_context_data(**kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    if test_func(request.user):
+AttributeError: 'ProfileView' object has no attribute 'user'
+2021-02-09 23:48:27,896,896 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:48:27,896,896 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:48:35,532,532 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:48:35,533,533 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:48:41,436,436 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:48:41,437,437 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:48:44,842,842 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-09 23:48:44,843,843 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:49:00,179,179 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:49:55,284,284 asyncio DEBUG Using selector: KqueueSelector
+2021-02-09 23:51:15,576,576 django.request WARNING Not Found: /ui-tables.html
+2021-02-09 23:51:15,712,712 django.request WARNING Not Found: /favicon.ico
+2021-02-09 23:56:27,536,536 django.request WARNING Not Found: /favicon.ico
+2021-02-09 23:56:59,670,670 django.request WARNING Not Found: /ui-icons.html
+2021-02-09 23:57:12,298,298 django.request WARNING Not Found: /ui-icons.html
+2021-02-09 23:57:12,406,406 django.request WARNING Not Found: /favicon.ico
+2021-02-09 23:58:12,772,772 django.request WARNING Not Found: /ui-icons.html
+2021-02-09 23:58:12,884,884 django.request WARNING Not Found: /favicon.ico
+2021-02-09 23:58:17,133,133 django.request WARNING Not Found: /ui-maps.html
+2021-02-10 00:00:44,332,332 django.request WARNING Not Found: /page-user.html
+2021-02-10 00:00:44,472,472 django.request WARNING Not Found: /favicon.ico
+2021-02-10 00:01:31,833,833 django.request WARNING Not Found: /page-user.html
+2021-02-10 00:01:32,080,80 django.request WARNING Not Found: /favicon.ico
+2021-02-10 00:04:19,392,392 django.request WARNING Not Found: /page-user.html
+2021-02-10 00:05:07,219,219 django.request WARNING Not Found: /favicon.ico
+2021-02-10 00:06:36,584,584 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-10 00:06:36,617,617 asyncio DEBUG Using selector: KqueueSelector
+2021-02-10 00:06:45,115,115 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-10 00:06:45,115,115 asyncio DEBUG Using selector: KqueueSelector
+2021-02-10 00:06:51,915,915 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/user_app/views.py changed, reloading.
+2021-02-10 00:06:51,915,915 asyncio DEBUG Using selector: KqueueSelector
+2021-02-10 00:06:55,354,354 asyncio DEBUG Using selector: KqueueSelector
+2021-02-10 00:13:35,124,124 django.request WARNING Not Found: /page-user.html
+2021-02-10 00:17:37,839,839 django.request WARNING Not Found: /favicon.ico
+2021-02-10 00:17:40,566,566 django.request WARNING Not Found: /favicon.ico
+2021-02-10 00:17:47,437,437 django.request WARNING Not Found: /favicon.ico
+2021-02-10 00:18:04,203,203 asyncio DEBUG Using selector: KqueueSelector
+2021-02-10 00:21:01,791,791 django.request ERROR Internal Server Error: /user_app/profile/
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/views/generic/base.py", line 159, in get
+    context = self.get_context_data(**kwargs)
+  File "/Users/mhope/Documents/stuff/pros/codegen/user_app/views.py", line 47, in get_context_data
+    context['first_name'] = self.request.user.first_name
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/utils/functional.py", line 241, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'first_name'
+2021-02-10 00:21:38,318,318 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/codegen/settings.py changed, reloading.
+2021-02-10 00:21:38,318,318 asyncio DEBUG Using selector: KqueueSelector

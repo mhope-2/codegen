@@ -32,8 +32,13 @@ class HomeView(TemplateView):
 
 
 class ProfileView(TemplateView,LoginRequiredMixin):
+
+    login_url = '/user_app/login/'
+    redirect_field_name = 'user_app:login'
+
     model = User
-    template_name = 'user_app/login_views/profile_view.html'
+    template_name = 'page-user.html'
+    # template_name = 'user_app/login_views/profile_view.html'
 
     def get_context_data(self, **kwargs):
 
@@ -41,7 +46,8 @@ class ProfileView(TemplateView,LoginRequiredMixin):
         context['code'] = ""
         context['first_name'] = self.request.user.first_name
         context['last_name'] = self.request.user.last_name
-        
+            
+
         try:
 
             if  UserProfile.objects.filter(code__isnull=True):
@@ -71,7 +77,8 @@ class SignUpView(CreateView):
     model = User
     form_class = forms.UserCreateForm
     success_url = reverse_lazy('user_app:login')
-    template_name = 'user_app/registration/sign_up.html'
+    template_name = 'accounts/register.html'
+    # template_name = 'user_app/registration/sign_up.html'
 
 
 class LogoutView(TemplateView):

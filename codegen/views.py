@@ -17,7 +17,9 @@ logging.basicConfig(filename=str(settings.BASE_DIR) + '/logs/smslog.logs',
 
 # Create your views here.
 def index(request):
-    
-    return render(request, 'user_app/login_views/index.html')
+
+    # return render(request, 'accounts/register.html')
+
+    return render(request, 'index.html')
 
 
