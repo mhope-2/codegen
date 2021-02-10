@@ -3439,3 +3439,6 @@ Traceback (most recent call last):
 AttributeError: 'AnonymousUser' object has no attribute 'first_name'
 2021-02-10 00:21:38,318,318 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/codegen/settings.py changed, reloading.
 2021-02-10 00:21:38,318,318 asyncio DEBUG Using selector: KqueueSelector
+2021-02-10 00:52:51,245,245 django.request WARNING Not Found: /static/assets/img/apple-icon.png
+2021-02-10 00:52:51,247,247 django.request WARNING Not Found: /static/assets/img/favicon.png
+2021-02-10 00:52:55,518,518 asyncio DEBUG Using selector: KqueueSelector
