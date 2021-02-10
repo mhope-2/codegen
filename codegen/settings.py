@@ -25,7 +25,7 @@ SECRET_KEY = 'g=33!vu8@_2t6hz#^us^-izxpd3rv760vvo31y5j@nle6kxx@g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['jubae.heroku.com', '127.0.0.1']
+ALLOWED_HOSTS = ['jubae.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
