@@ -3442,3 +3442,21 @@ AttributeError: 'AnonymousUser' object has no attribute 'first_name'
 2021-02-10 00:52:51,245,245 django.request WARNING Not Found: /static/assets/img/apple-icon.png
 2021-02-10 00:52:51,247,247 django.request WARNING Not Found: /static/assets/img/favicon.png
 2021-02-10 00:52:55,518,518 asyncio DEBUG Using selector: KqueueSelector
+2021-02-10 01:17:02,125,125 asyncio DEBUG Using selector: KqueueSelector
+2021-02-10 01:18:04,075,75 django.security.DisallowedHost ERROR Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+2021-02-10 01:18:04,179,179 django.request WARNING Bad Request: /
+2021-02-10 01:18:04,331,331 django.security.DisallowedHost ERROR Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+2021-02-10 01:18:04,388,388 django.request WARNING Bad Request: /favicon.ico
+2021-02-10 01:18:17,210,210 django.request WARNING Not Found: /static/assets/css/nucleo-icons.css
+2021-02-10 01:18:17,221,221 django.request WARNING Not Found: /static/assets/js/plugins/chartjs.min.js
+2021-02-10 01:18:17,225,225 django.request WARNING Not Found: /static/assets/css/black-dashboard.css
+2021-02-10 01:18:17,231,231 django.request WARNING Not Found: /static/assets/js/core/bootstrap.min.js
+2021-02-10 01:18:17,237,237 django.request WARNING Not Found: /static/assets/js/core/jquery.min.js
+2021-02-10 01:18:17,241,241 django.request WARNING Not Found: /static/assets/js/plugins/bootstrap-notify.js
+2021-02-10 01:18:17,244,244 django.request WARNING Not Found: /static/assets/demo/demo.js
+2021-02-10 01:18:17,246,246 django.request WARNING Not Found: /static/assets/js/black-dashboard.min.js
+2021-02-10 01:18:17,249,249 django.request WARNING Not Found: /static/assets/js/core/popper.min.js
+2021-02-10 01:18:17,253,253 django.request WARNING Not Found: /static/assets/demo/demo.css
+2021-02-10 01:18:17,263,263 django.request WARNING Not Found: /static/assets/js/plugins/perfect-scrollbar.jquery.min.js
+2021-02-10 01:18:19,564,564 django.request WARNING Not Found: /static/assets/img/favicon.png
+2021-02-10 01:18:28,967,967 asyncio DEBUG Using selector: KqueueSelector
