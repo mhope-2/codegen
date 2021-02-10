@@ -3551,3 +3551,57 @@ AttributeError: 'AnonymousUser' object has no attribute 'first_name'
 2021-02-10 01:27:45,565,565 django.request WARNING Not Found: /static/assets/img/favicon.png
 2021-02-10 01:27:54,196,196 asyncio DEBUG Using selector: KqueueSelector
 2021-02-10 01:28:32,586,586 asyncio DEBUG Using selector: KqueueSelector
+2021-02-10 01:42:23,601,601 asyncio DEBUG Using selector: KqueueSelector
+2021-02-10 01:42:46,412,412 django.request ERROR Internal Server Error: /user_app/login/
+Traceback (most recent call last):
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 202, in _get_response
+    response = response.render()
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/Users/mhope/Documents/stuff/pros/codegen/env/lib/python3.9/site-packages/django/urls/resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'register' not found. 'register' is not a valid view function or pattern name.
+2021-02-10 01:42:47,420,420 django.request WARNING Not Found: /favicon.ico
+2021-02-10 01:43:37,097,97 asyncio DEBUG Using selector: KqueueSelector
+2021-02-10 01:44:02,681,681 asyncio DEBUG Using selector: KqueueSelector
+2021-02-10 01:45:31,026,26 django.utils.autoreload INFO /Users/mhope/Documents/stuff/pros/codegen/codegen/settings.py changed, reloading.
+2021-02-10 01:45:31,053,53 asyncio DEBUG Using selector: KqueueSelector
+2021-02-10 01:45:59,493,493 asyncio DEBUG Using selector: KqueueSelector

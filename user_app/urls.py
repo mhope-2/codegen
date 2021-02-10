@@ -12,7 +12,7 @@ urlpatterns = [
    path('', HomeView.as_view(), name='home'),
    path('signup/', SignUpView.as_view(), name="signup"),
    path('profile/', ProfileView.as_view(), name="profile_view"),
-   path('login/', auth_views.LoginView.as_view(template_name='user_app/registration/login.html'), name="login"),
+   path('login/', auth_views.LoginView.as_view(template_name='accounts/login.html'), name="login"),
    path('password/reset/form/', auth_views.PasswordResetView.as_view(template_name='user_app/registration/password_reset_form.html'), name='password_rest_form'),
    path('password_reset/done/', auth_views.PasswordResetDoneView.as_view(template_name='user_app/registration/password_reset_done.html'), name='password_reset_done'),
    path(r'^verify/(?P<uuid>[a-z0-9\-]+)/', views.verify, name='verify'),

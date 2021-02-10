@@ -23,9 +23,9 @@
                         <span class="text-danger">{{ msg }}</span>
                       {% else %}
 
-                        Use default credentials: test / ApS12_ZZs8
-                        <br />
-                        OR <a href={% url 'register' %} >create your own user</a>
+                        {% comment %} Use default credentials: test / ApS12_ZZs8
+                        <br /> {% endcomment %}
+                        OR <a href={% url 'user_app:signup' %} >create your own user</a>
 
                       {% endif %}  
                   </h6>
@@ -58,7 +58,7 @@
                 <div class="card-footer">
                   <button type="submit" name="login" class="btn btn-fill btn-primary">Login</button>
                   &nbsp; &nbsp;
-                  Don't have an account? <a href="{% url 'register' %}" class="text-primary">Create</a>
+                  Don't have an account? <a href="{% url 'user_app:signup' %}" class="text-primary">Create</a>
                 </div>
 
               </form>
