@@ -15,12 +15,12 @@ def send_verification_email(user_id):
             '''Dear %s,\n
             Thank you for registering
 
-            Kindly follow this link to verify your account: http://end-game.snwolley.com%s
+            Kindly follow this link to verify your account: http://a.com%s
 
             Regards
-            Npontu Technologies''' % (str(user.full_name),
+            X''' % (str(user.full_name),
                                       reverse('verify', kwargs={'uuid': str(user.verification_uuid)})),
-            'Snwolley',
+            'X',
             [user.email],
             fail_silently=False,
         )
