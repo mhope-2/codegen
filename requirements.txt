@@ -14,7 +14,7 @@ django==5.2.17
 django-celery-beat==2.9.0
 django-cors-headers==4.9.0
 django-crispy-forms==2.7
-django-filter==26.1
+django-filter==26.2
 django-timezone-field==7.2.2
 djangorestframework==3.18.1
 gunicorn==26.2.0
@@ -27,12 +27,12 @@ pandas==3.0.6
 prompt-toolkit==3.0.53
 python-crontab==3.4.0
 python-dateutil==2.9.0.post0
-pytz==2026.4
+pytz==2026.5
 requests==2.34.2
 six==1.17.0
 sqlparse==0.6.0
 typing-extensions==4.16.0
-tzdata==2026.4
+tzdata==2026.5
 tzlocal==5.4.4
 urllib3==2.8.0
 vine==5.1.0
