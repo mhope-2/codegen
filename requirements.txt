@@ -27,12 +27,12 @@ pandas==3.1.0
 prompt-toolkit==3.0.53
 python-crontab==3.4.0
 python-dateutil==2.9.0.post0
-pytz==2026.5
+pytz==2026.6
 requests==2.34.2
 six==1.17.0
 sqlparse==0.6.0
 typing-extensions==4.16.0
-tzdata==2026.5
+tzdata==2026.6
 tzlocal==5.4.5
 urllib3==2.8.0
 vine==5.1.0
