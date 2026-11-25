@@ -2,7 +2,7 @@ amqp==5.4.2
 asgiref==3.13.0
 billiard==4.3.2
 celery==5.7.0
-certifi==2026.10.23
+certifi==2026.11.20
 charset-normalizer==3.5.2
 click==8.5.1
 click-didyoumean==0.3.1
@@ -21,7 +21,7 @@ gunicorn==26.2.0
 idna==3.20
 kombu==5.7.0
 markdown==3.11.3
-numpy==2.5.4
+numpy==2.5.5
 packaging==26.3
 pandas==3.1.1
 prompt-toolkit==3.0.53
@@ -36,5 +36,5 @@ tzdata==2026.6
 tzlocal==5.4.5
 urllib3==2.8.0
 vine==5.1.0
-wcwidth==0.9.4
+wcwidth==0.9.5
 whitenoise==6.12.0
